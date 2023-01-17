@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    color:darkblue
+}
+
+img {
+    width:600px;
+    height:300px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: red;
+}
+
+h3 {
+    text-align: center;
+}
