@@ -1,0 +1,44 @@
+<div class="Row" id="GitHub">
+    <!--Left column-->
+    <div class="Column_1">
+        <h1>GitHub</h1>
+        <p>
+            You can view my coding projects on my GitHub profile here:
+            <br>
+            <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a></p>
+        </p>
+    </div>
+    <!--Right column-->
+    <div class="Column_2">
+        <a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/Planning.jpg" alt="planning"></a>
+    </div>
+</div>
+
+/***** VIDEO STYLING *****/
+/* Formatting for background video */
+.firstimg {
+    position: fixed; /* This fixes the video to the page */
+    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+    bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
+    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    z-index: -1; /* This places the video behind the other elements on the page */
+}
+
+/* Screens that are 576px and smaller will not display the background video */
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+/* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */
+@keyframes moveImg_text {
+    from {top: -100vw;} /* This sets the position of the video text to above the viewport */
+    to {top: 0vw;} /* This moves the video text to the normal positioning on the viewport */
+}
+/***** END OF VIDEO STYLING *****/
+
+/* Paragraph element hover effect */
+p:hover {
+    transition: transform 1s; /* This makes the transform effect last 1 second */
+	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
+}
